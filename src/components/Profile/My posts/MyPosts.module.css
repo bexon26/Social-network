@@ -1,3 +1,7 @@
 .item {
     color: yellow;
   }
+
+.postsBlock {
+  padding: 10px;
+}
