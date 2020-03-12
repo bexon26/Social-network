@@ -5,3 +5,39 @@
 .postsBlock {
   padding: 10px;
 }
+.textBlock{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+textarea {
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  border-radius: 4px;
+  color: #939598;
+  width: 220px;
+  padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    /* transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
+    font-family: inherit;
+}
+
+.addPost__button{
+  background: #27aae1;
+  color: #fff;
+  padding: 7px 25px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  line-height: 1.42857143;
+}
+
+.addPost__button:hover {
+  background: #0696ca;
+}
