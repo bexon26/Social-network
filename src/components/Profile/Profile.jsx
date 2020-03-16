@@ -13,7 +13,7 @@ const Profile = (props) => {
                     dispatch={props.dispatch}
                      />
         </div>)
-         console.log(props)
+        
 }
 
 export default Profile;

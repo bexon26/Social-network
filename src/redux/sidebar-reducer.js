@@ -1,6 +1,8 @@
-export const sidebarReducer = (state, action) => {
-    
+let initialsState = {};
 
+const sidebarReducer = (state=initialsState, action) => {
+    
+    
 
     return state
 }

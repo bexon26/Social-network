@@ -6,9 +6,8 @@ import { updateNewMessageBodyCreator, sendMessageCreator } from '../../redux/dia
 
 
 const Dialogs = (props) => {
-
+    console.log(props.store.getState());
     let state = props.store.getState().dialogsPage;
-
     let dialogsElements = state.dialogs
         .map(d => <DialogsItems name={d.name} id={d.id} />);
     let messagesElements = state.messages
