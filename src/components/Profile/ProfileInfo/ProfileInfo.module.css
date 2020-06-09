@@ -6,3 +6,11 @@
   .descriprionBlock {
     padding: 10px;
   }
+
+  .photoProfile{
+    max-width: 300px;
+  }
+
+  .contact{
+    padding-left: 10px;
+  }
