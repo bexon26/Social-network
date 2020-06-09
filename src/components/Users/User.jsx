@@ -3,7 +3,7 @@ import classes from './Users.module.css';
 import { NavLink } from 'react-router-dom';
 
 
-
+export const userPhoto = 'https://sun9-15.userapi.com/c629404/v629404957/8a5/8841YpL9Pcw.jpg';
 
 let User = ({ user, followingInProgress, unfollow, follow }) => {
     return (
@@ -11,10 +11,7 @@ let User = ({ user, followingInProgress, unfollow, follow }) => {
             <span>
                 <div>
                     <NavLink to={'/profile/' + user.id}>
-                        <img src={
-                            user.photos.small !== null ?
-                                user.photos.small :
-                                'https://sun9-15.userapi.com/c629404/v629404957/8a5/8841YpL9Pcw.jpg'
+                        <img src={user.photos.small !== null ? user.photos.small : userPhoto
                         } alt="" className={classes.userPhoto} />
 
                     </NavLink>

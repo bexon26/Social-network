@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
-import { Route, withRouter, BrowserRouter } from 'react-router-dom';
+import { Route, withRouter, HashRouter } from 'react-router-dom';
 import UsersContainer from './components/Users/UsersContainer';
 //import ProfileContainer from './components/Profile/ProfileContainer';
 import Preloader from './components/common/Preloader/Preloader';
@@ -23,8 +23,22 @@ const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileCo
 
 
 class App extends Component {
+   catchAllUnhandledErrors = (promiseRejectionEvent) => {
+      alert("Some error occured")
+   }
+
+
    componentDidMount() {
       this.props.initializeApp();
+      window.addEventListener('unhandledrejection', function(promiseRejectionEvent){
+
+      })
+   }
+
+   componentWillUnmount(){
+      window.removeEventListener('unhandledrejection', function(promiseRejectionEvent){
+
+      })
    }
 
    render() {
@@ -71,11 +85,11 @@ let AppContainer = compose(
    connect(mapStateToProps, { initializeApp }))(App);
 
 const SamuraiJsApp = (props) => {
-   return <BrowserRouter>
+   return <HashRouter>>
       <Provider store={store}>
          <AppContainer />
       </Provider>
-   </BrowserRouter>
+   </HashRouter>
 }
 
 export default SamuraiJsApp;
