@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0abbe067a434ae7b4c54a2c9f4e818d0",
+    "revision": "7b97f27e4a4e02a0da2fdcf4bc137b2f",
     "url": "/Social-network/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Social-network/static/css/4.a200d4e1.chunk.css"
   },
   {
-    "revision": "266a94f169215c54589b",
+    "revision": "354d56f54f231257b1d8",
     "url": "/Social-network/static/css/main.a17b0955.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Social-network/static/js/4.6f8493f0.chunk.js"
   },
   {
-    "revision": "266a94f169215c54589b",
-    "url": "/Social-network/static/js/main.fde1470e.chunk.js"
+    "revision": "354d56f54f231257b1d8",
+    "url": "/Social-network/static/js/main.c426ca60.chunk.js"
   },
   {
     "revision": "4fee318d7ab8840519a1",
@@ -44,7 +44,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Social-network/static/media/Double Ring-1.3s-200px.427518a6.svg"
   },
   {
-    "revision": "07f542a0dd112cf7929ad7dbb85f7dfe",
-    "url": "/Social-network/static/media/logo-black.07f542a0.png"
+    "revision": "b4b06117de3edd2f4c7f70ed369f8471",
+    "url": "/Social-network/static/media/logo.b4b06117.png"
   }
 ]);
